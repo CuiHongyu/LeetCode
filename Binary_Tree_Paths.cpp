@@ -1,4 +1,4 @@
-/*
+/* 问题：
 Given a binary tree, return all root-to-leaf paths.
 
 For example, given the following binary tree:
@@ -24,7 +24,7 @@ All root-to-leaf paths are:
 class Solution {
 public:
     void getDfsPaths(vector<string>& result, TreeNode* node, string strpath) {
-        if(!node->left && !node->right){//Ҷ��
+        if(!node->left && !node->right){
             result.push_back(strpath);
             return ;
         }
